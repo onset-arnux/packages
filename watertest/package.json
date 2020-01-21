@@ -1,0 +1,9 @@
+{
+	"author": "Arny",
+	"version": "1.0",
+	"server_scripts": [],
+	"client_scripts": [
+		"client/watertest.lua"
+	],
+	"files": []
+}
