@@ -12,7 +12,6 @@ local robberyStep
 -- * ended
 local workingCops = {}
 
--- Test
 -- Configs
 
 local robberyLocation = { 213940.421875, 192764.109375, 1309.3317871094 }
