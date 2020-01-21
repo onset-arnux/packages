@@ -2,25 +2,30 @@ print("Loading water test!")
 -- test
 function waterlevelmin200()
     SetOceanWaterLevel(-200, true)
+    AddPlayerChat("CLIENT RECIEVED")
 end
-AddEvent("waterlevelmin200", waterlevelmin200)
+AddRemoteEvent("waterlevelmin200", waterlevelmin200)
 
 function waterlevelmin1000()
     SetOceanWaterLevel(1000, true)
+    AddPlayerChat("CLIENT RECIEVED")
 end
-AddEvent("waterlevelmin1000", waterlevelmin1000)
+AddRemoteEvent("waterlevelmin1000", waterlevelmin1000)
 
 function waterlevelmin5000()
     SetOceanWaterLevel(5000, true)
+    AddPlayerChat("CLIENT RECIEVED")
 end
-AddEvent("waterlevelmin5000", waterlevelmin5000)
+AddRemoteEvent("waterlevelmin5000", waterlevelmin5000)
 
 function waterlevelmin10000()
     SetOceanWaterLevel(10000, true)
+    AddPlayerChat("CLIENT RECIEVED")
 end
-AddEvent("waterlevelmin10000", waterlevelmin10000)
+AddRemoteEvent("waterlevelmin10000", waterlevelmin10000)
 
 function waterlevelmin0()
     SetOceanWaterLevel(0, true)
+    AddPlayerChat("CLIENT RECIEVED")
 end
-AddEvent("waterlevelmin0", waterlevelmin0)
+AddRemoteEvent("waterlevelmin0", waterlevelmin0)
