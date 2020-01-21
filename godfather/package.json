@@ -1,0 +1,44 @@
+{
+	"author": "JanHolger",
+	"version": "1.0",
+	"server_scripts": [
+		"json.lua",
+		"config.lua",
+		"doors.lua",
+		"base/server/imports.lua",
+		"base/server/spawn.lua",
+		"atm/server.lua",
+		"admin/server.lua",
+		"vehicles/server.lua",
+		"chat/server.lua",
+		"environment/server.lua",
+		"inventory/server.lua",
+		"housing/server.lua",
+		"shops/server.lua",
+		"vehicleshops/server.lua",
+		"gps/server.lua",
+		"helper/server.lua",
+		"jobs/server.lua"
+	],
+	"client_scripts": [
+		"json.lua",
+		"base/client/imports.lua",
+		"clothing/client.lua",
+		"atm/client.lua",
+		"admin/client.lua",
+		"hud/client.lua",
+		"vehicles/client.lua",
+		"inventory/client.lua",
+		"environment/client.lua",
+		"shops/client.lua",
+		"vehicleshops/client.lua",
+		"gps/client.lua",
+		"housing/client.lua",
+		"jobs/client.lua",
+		"helper/client.lua"
+	],
+	"files": [
+		"hud/hud.html",
+		"hud/Staatliches-Regular.ttf"
+	]
+}
