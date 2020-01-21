@@ -1,3 +1,5 @@
+print("Loading water test!")
+
 function waterlevelmin200(playerid)
     SetOceanWaterLevel(-200, true)
 	return
