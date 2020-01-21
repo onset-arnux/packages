@@ -12,6 +12,7 @@ local robberyStep
 -- * ended
 local workingCops = {}
 
+-- Test
 -- Configs
 
 local robberyLocation = { 213940.421875, 192764.109375, 1309.3317871094 }
@@ -69,12 +70,12 @@ function RobberyStarted(player)
     CallRemoteEvent(player, "MakeSuccessNotification", _("starting_robbery"))
 
     SetPlayerAnimation(player, "COMBINE")
-    
+
     Delay(10000, function (player)
         CallRemoteEvent(player, "MakeSuccessNotification", _("robbery_started", timeBeforeGettingMoneyInMinutes))
 
         SetPlayerAnimation(player, "STOP")
-        
+
         for k, v in pairs(workingCops) do
             CallRemoteEvent(k, "PoliceAlert", _("robbery_started_police"))
         end
@@ -96,9 +97,9 @@ function RobberyReadyToPickup(player)
             RobberyEnded()
         end
     end, player)
-    
+
     robberyStep = "pickup"
-    
+
     bankRobberyMoneyObject = CreateObject(517, robberyLocation[1], robberyLocation[2], robberyLocation[3] - 100)
     bankRobberyMoneyText = CreateText3D(_("get_robbery_money").."\n".._("press_e"), 18, robberyLocation[1], robberyLocation[2], robberyLocation[3], 0, 0, 0)
 end
@@ -123,14 +124,14 @@ end
 
 function RobberyEnded()
     robberyStep = "ended"
-    
+
     for k,v in pairs(GetAllPlayers()) do
         CallRemoteEvent(v, "RobberyStopAlarm")
     end
 
     DestroyObject(bankRobberyMoneyObject)
     DestroyText3D(bankRobberyMoneyText)
-    
+
     Delay(timeBeforeNewRobbery * 60000, RobberyReady)
 end
 
