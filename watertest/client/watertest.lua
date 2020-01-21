@@ -1,4 +1,5 @@
 print("Loading water test!")
+-- test
 
 function waterlevelmin200()
     SetOceanWaterLevel(-200, true)
