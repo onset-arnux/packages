@@ -4,28 +4,28 @@ function waterlevelmin200()
     SetOceanWaterLevel(-200, true)
     AddPlayerChat("CLIENT RECIEVED")
 end
-AddRemoteEvent("200", waterlevelmin200)
+AddRemoteEvent("waterlevelmin200", waterlevelmin200)
 
 function waterlevelmin1000()
     SetOceanWaterLevel(1000, true)
     AddPlayerChat("CLIENT RECIEVED")
 end
-AddRemoteEvent("1000", waterlevelmin1000)
+AddRemoteEvent("waterlevelmin1000", waterlevelmin1000)
 
 function waterlevelmin5000()
     SetOceanWaterLevel(5000, true)
     AddPlayerChat("CLIENT RECIEVED")
 end
-AddRemoteEvent("5000", waterlevelmin5000)
+AddRemoteEvent("waterlevelmin5000", waterlevelmin5000)
 
 function waterlevelmin10000()
     SetOceanWaterLevel(10000, true)
     AddPlayerChat("CLIENT RECIEVED")
 end
-AddRemoteEvent("10000", waterlevelmin10000)
+AddRemoteEvent("waterlevelmin10000", waterlevelmin10000)
 
 function waterlevelmin0()
     SetOceanWaterLevel(0, true)
     AddPlayerChat("CLIENT RECIEVED")
 end
-AddRemoteEvent("0", waterlevelmin0)
+AddRemoteEvent("waterlevelmin0", waterlevelmin0)
