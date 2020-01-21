@@ -1,36 +1,26 @@
 print("Loading water test!")
 -- test
-function waterlevelmin200(playerid)
+function waterlevelmin200()
     SetOceanWaterLevel(-200, true)
-    AddPlayerChat("Set to 200")
-	return
 end
-AddCommand("waterlevelmin200", waterlevelmin200)
+AddEvent("waterlevelmin200", waterlevelmin200)
 
-function waterlevelmin1000(playerid)
+function waterlevelmin1000()
     SetOceanWaterLevel(1000, true)
-    AddPlayerChat("Set to 1000")
-	return
 end
-AddCommand("waterlevelmin1000", waterlevelmin1000)
+AddEvent("waterlevelmin1000", waterlevelmin1000)
 
-function waterlevelmin5000(playerid)
+function waterlevelmin5000()
     SetOceanWaterLevel(5000, true)
-    AddPlayerChat("Set to 5000")
-	return
 end
-AddCommand("waterlevelmin5000", waterlevelmin5000)
+AddEvent("waterlevelmin5000", waterlevelmin5000)
 
-function waterlevelmin10000(playerid)
+function waterlevelmin10000()
     SetOceanWaterLevel(10000, true)
-    AddPlayerChat("Set to 10000")
-	return
 end
-AddCommand("waterlevelmin10000", waterlevelmin10000)
+AddEvent("waterlevelmin10000", waterlevelmin10000)
 
-function waterlevelmin0(playerid)
+function waterlevelmin0()
     SetOceanWaterLevel(0, true)
-    AddPlayerChat("Set to 0")
-	return
 end
-AddCommand("waterlevelmin0", waterlevelmin0)
+AddEvent("waterlevelmin0", waterlevelmin0)
